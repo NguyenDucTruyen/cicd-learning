@@ -1,0 +1,10 @@
+name: "Quality Action"
+description: "Check quality"
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v5
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{env.NODE_VERSION}}
+    - run: npm run test
