@@ -14,4 +14,4 @@ jobs:
     name: Checkout and Setup Node
     continue-on-error: true
     steps:
-      - uses: NguyenDucTruyen/cicd-learning/.github/quality@v1
+      - uses: NguyenDucTruyen/cicd-learning/.github/quality@v2
