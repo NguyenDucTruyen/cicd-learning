@@ -14,8 +14,4 @@ jobs:
     name: Checkout and Setup Node
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{env.NODE_VERSION}}
-      - run: npm run test
+      - uses: NguyenDucTruyen/cicd-learning/.github/quality@v1
