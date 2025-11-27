@@ -12,6 +12,7 @@ jobs:
   unit_test:
     uses: ./.github/workflows/test-workflow.yml
   cd:
+    needs: unit_test
     uses: ./.github/workflows/image-publish-workflow.yml
     secrets:
       SHA: ${{ github.sha }}
