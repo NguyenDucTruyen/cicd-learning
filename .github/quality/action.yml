@@ -8,3 +8,4 @@ runs:
       with:
         node-version: ${{env.NODE_VERSION}}
     - run: npm run test
+      shell: bash
