@@ -3,15 +3,11 @@ name: CI workflow
 on:
   pull_request:
     branches:
-      - main
+      - develop
 
 env:
   NODE_VERSION: 22.0.0
 
 jobs:
   unit_test:
-    runs-on: ubuntu-latest
-    name: Checkout and Setup Node
-    continue-on-error: true
-    steps:
-      - uses: NguyenDucTruyen/cicd-learning/.github/quality@v2
+    uses: ./.github/workflows/test-workflow.yml
